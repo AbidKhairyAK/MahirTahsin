@@ -1,0 +1,69 @@
+- Nama Apilkasi : Mahir Tahsin | Panduan Ilmu Tajwid
+
+- Fitur Aplikasi : 
+	- Pembelajaran ilmu tajwid secara bertahap dan dibagi menjadi beberapa tingkatan
+	- Disertai dengan gambar beserta audio pada setiap pelajaran
+	- Dilengkapi dengan fitur latihan untuk mengukur tingkat pemahaman pengguna
+	- Fitur kustomisasi tampilan untuk meningkatkan kenyamanan pengguna
+	- Fitur lapor untuk melaporkan kesalahan yang ditemukan pada aplikasi
+
+- Struktur Aplikasi :
+	- Nama Aplikasi
+	- Tombol Mulai Belajar 
+		- Daftar Bab
+			- Daftar sub bab
+				- materi pelajaran
+				- latihan (optional)
+			- latihan (optional)
+	- Tombol Pengaturan
+		- font
+		- size
+		- theme
+	- Tombol Tentang
+		- Penjelasan Aplikasi
+		- Profil Singkat Penulis
+		- Kontak Developer
+	- Tombol Lapor
+
+- Things that need to Think :
+	- audio online atau offline? (berhubungan dengan fitur latihan)
+	- yang mau buat audio?
+	- penulis pengennya seperti apa?
+	- distribusi aplikasi? (free | premium | iap | use code | with book)
+
+- kerangka materi bab 1
+	- list judul materi
+		- isi materi
+		- latihan
+
+- kerangka materi bab 2
+	- list judul materi
+		- isi materi
+			- list item
+		-latihan
+
+- kerangka materi bab 3
+	- list judul materi
+		- isi materi
+			- audio
+			- list item
+				- sub list item
+		-latihan
+
+- kerangka materi bab 4
+	- list judul materi
+		- isi materi
+			- gambar
+			- audio
+			- list item (collapse | enter)
+				- sub list item
+		-latihan
+
+- kerangka materi bab 5
+	- list judul materi
+		- list item (collapse)
+			- gambar
+			- table?
+			- audio
+			- sub list item
+		-latihan
