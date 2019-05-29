@@ -3,10 +3,10 @@
 		<status-bar bar-style="light-content" background-color="transparent" :translucent="true"></status-bar>
 		<nb-view class="container">
 			<image-background class="main-bg"
-				:source="require('../../../assets/img/green-bg.jpg')"
+				:source="require('../../assets/img/green-bg.jpg')"
 				:blur-radius="2"
 			>
-				<!-- <nb-view class="overlay"></nb-view> -->
+				<nb-view class="overlay"></nb-view>
 				<nb-view class="title-wrapper">
 					<cus-text weight="black" color="light" size="xl">MAHIR TAHSIN</cus-text>
 					<cus-text weight="bold" color="light" size="md">PANDUAN ILMU TAJWID</cus-text>
@@ -17,10 +17,10 @@
 					<cus-text weight="italic" color="light" size="sm">~ Sederhana, Praktis, & Mudah Dipahami ~</cus-text>
 				</nb-view>
 				<nb-view class="button-wrapper">
-					<title-button icon="book" :navigation="navigation" nav="BabList" title="Mulai Belajar"></title-button>
-					<title-button icon="cogs" :navigation="navigation" nav="BabList" title="Pengaturan"></title-button>
-					<title-button icon="question" :navigation="navigation" nav="BabList" title="Tentang Aplikasi"></title-button>
-					<title-button icon="exclamation-triangle" :navigation="navigation" nav="BabList" title="Lapor Kesalahan"></title-button>
+					<title-item icon="book" :navigation="navigation" nav="ChapterList" title="Mulai Belajar"></title-item>
+					<title-item icon="cogs" :navigation="navigation" nav="Config" title="Pengaturan"></title-item>
+					<title-item icon="question" :navigation="navigation" nav="About" title="Tentang Aplikasi"></title-item>
+					<title-item icon="exclamation-triangle" :navigation="navigation" nav="Report" title="Lapor Kesalahan"></title-item>
 				</nb-view>
 			</image-background>
 		</nb-view>
@@ -28,13 +28,12 @@
 </template>
 
 <script>
-	import { Dimensions } from 'react-native';
-	import TitleButton from './TitleButton';
-	import CusText from '../../item/CusText';
+	import TitleItem from '../item/TitleItem';
+	import CusText from '../item/CusText';
 
 	export default {
 		components: {
-			TitleButton,
+			TitleItem,
 			CusText
 		},
 		props: {

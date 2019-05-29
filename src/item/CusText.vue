@@ -1,5 +1,5 @@
 <template>
-	<nb-text :style="{ fontFamily: textWeight, color: textColor, fontSize: textSize, textAlign: 'center' }">
+	<nb-text :style="{ fontFamily: textWeight, color: textColor, fontSize: textSize, textAlign: textAlign }">
 		<slot></slot>
 	</nb-text>
 </template>
@@ -11,6 +11,7 @@
 			weight: 'black' | 'semi-bold' | 'bold' | 'bold-italic' | 'light' | 'light-italic' | 'italic',
 			color: 'light' | 'dark' | 'primary' | 'secondary' | String,
 			size: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | Number,
+			align: 'c' | 'l' | 'r',
 		},
 		computed: {
 			font() {
@@ -30,9 +31,9 @@
 			},
 			textColor() {
 				switch(this.color) {
-					case 'light': return '#efe'; break;
+					case 'light': return '#eee'; break;
 					case 'dark': return '#333'; break;
-					case 'primary': return '#efe'; break;
+					case 'primary': return '#eee'; break;
 					case 'secondary': return '#cdc'; break;
 					default: return this.color; break;
 				}
@@ -45,6 +46,14 @@
 					case 'lg': return 24 + 1; break;
 					case 'xl': return 30 + 1; break;
 					default: return this.size; break;
+				}
+			},
+			textAlign() {
+				switch(this.align) {
+					case 'c': return 'center'; break;
+					case 'l': return 'left'; break;
+					case 'r': return 'right'; break;
+					default: return 'left'; break;
 				}
 			}
 		}

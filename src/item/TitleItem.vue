@@ -2,13 +2,13 @@
 	<touchable-opacity :on-press="() => navigate()">
 		<nb-view class="button-wrapper">
 			<nb-icon type="FontAwesome5" :name="icon" class="button-icon"></nb-icon>
-			<cus-text color="light" size="sm" weight="bold">{{ title }}</cus-text>
+			<cus-text color="light" size="sm" weight="bold" align="c">{{ title }}</cus-text>
 		</nb-view>
 	</touchable-opacity>
 </template>
 
 <script>
-	import CusText from '../../item/CusText';
+	import CusText from './CusText';
 
 	export default {
 		components: {
@@ -17,8 +17,7 @@
 		props: ['title', 'icon', 'navigation', 'nav'],
 		methods: {
 			navigate() {
-				let nav = this.nav;
-				this.navigation.navigate(nav);
+				this.navigation.navigate(this.nav);
 			}
 		}
 	}
@@ -26,13 +25,14 @@
 
 <style scoped>
 	.button-wrapper {
-		background-color: rgba(240, 255, 240, 0.3);
-		border-radius: 5;
+		background-color: rgba(230, 255, 230, 0.2);
+		border-radius: 10;
 		width: 125;
 		height: 125;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 25
+		margin-bottom: 25;
+		elevation: 1;
 	}
 	.button-icon {
 		color: white;

@@ -1,15 +1,18 @@
 <template>
-	<nb-header class="header" androidStatusBarColor="green">
-		<status-bar bar-style="light-content" background-color="green" :translucent="false"></status-bar>
-		<nb-left>
+	<nb-header class="header" androidStatusBarColor="#005c2c">
+		<status-bar bar-style="light-content" background-color="#005c2c" :translucent="false"></status-bar>
+		<nb-left class="left">
 			<nb-button transparent :on-press="() => navigation.goBack()">
-				<nb-icon name="arrow-back" />
+				<nb-icon type="MaterialIcons" name="navigate-before" />
 			</nb-button>
 		</nb-left>
-		<nb-body>
-			<nb-title><cus-text color="light" weight="semi-bold" size="md">{{ title }}</cus-text></nb-title>
+		<nb-body class="body">
+			<nb-title class="title">
+				<cus-text color="light" weight="black" :size="17" align="c">{{ title }}</cus-text>
+			</nb-title>
 		</nb-body>
-		<nb-right />
+		<nb-right class="right">
+		</nb-right>
 	</nb-header>
 </template>
 
@@ -24,7 +27,21 @@
 
 <style scoped>
 	.header {
-		background-color: green;
-		margin-bottom: 20;
+		background-color: #063;
+		margin-bottom: 15;
+	}
+	.title {
+		align-self: center;
+		margin: 0;
+		padding: 0;
+	}
+	.body {
+		flex: 7;
+	}
+	.right {
+		flex: 1;
+	}
+	.left {
+		flex: 1;
 	}
 </style>
