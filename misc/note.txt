@@ -27,9 +27,13 @@
 
 - Things that need to Think :
 	- audio online atau offline? (berhubungan dengan fitur latihan)
+		=> online tapi download nya diawal ketika app di buka
 	- yang mau buat audio?
+		=> ngambil dari syaikh
 	- penulis pengennya seperti apa?
+		=> serah
 	- distribusi aplikasi? (free | premium | iap | use code | with book)
+		=> ?
 
 - kerangka materi bab 1
 	- list judul materi
@@ -67,3 +71,20 @@
 			- audio
 			- sub list item
 		-latihan
+
+- custom reusable component
+	- cus-text -/
+	- cus-title -/
+	- cus-list -/
+		- collapsible
+	- cus-parg -/
+	- cus-arab
+	- cus-audio
+	- cus-image
+
+- exclusive component
+	- word-example ch5
+	- ayat-example ch5
+	- alif-lam-example ch5
+	- ro-laws-example ch5
+	- huruf list table ch4

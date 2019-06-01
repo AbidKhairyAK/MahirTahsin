@@ -2,7 +2,7 @@
 	<nb-header class="header" androidStatusBarColor="#005c2c">
 		<status-bar bar-style="light-content" background-color="#005c2c" :translucent="false"></status-bar>
 		<nb-left class="left">
-			<nb-button transparent :on-press="() => navigation.goBack()">
+			<nb-button transparent :on-press="() => goBack()">
 				<nb-icon type="MaterialIcons" name="navigate-before" />
 			</nb-button>
 		</nb-left>
@@ -22,6 +22,12 @@
 	export default {
 		components: { CusText },
 		props: ['title', 'navigation'],
+		methods: {
+			goBack() {
+				this.$store.dispatch('closeAudio');
+				this.navigation.goBack();
+			}
+		}
 	}
 </script>
 

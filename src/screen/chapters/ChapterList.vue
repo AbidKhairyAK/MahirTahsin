@@ -1,7 +1,7 @@
 <template>
 	<nb-container class="container">
 		<bg></bg>
-		<header title="DAFTAR BAB" :navigation="navigation"></header>
+		<header title="Daftar Tab" :navigation="navigation"></header>
 		<nb-content padder>
 			<flat-list
 				:data="data.titles"

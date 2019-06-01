@@ -1,12 +1,11 @@
 <template>
-	<nb-text :style="{ fontFamily: textWeight, color: textColor, fontSize: textSize, textAlign: textAlign }">
+	<nb-text selectable :style="{ fontFamily: textWeight, color: textColor, fontSize: textSize, textAlign: textAlign }">
 		<slot></slot>
 	</nb-text>
 </template>
 
 <script>
 	export default {
-		name: 'CusText',
 		props: {
 			weight: 'black' | 'semi-bold' | 'bold' | 'bold-italic' | 'light' | 'light-italic' | 'italic',
 			color: 'light' | 'dark' | 'primary' | 'secondary' | String,
@@ -40,11 +39,11 @@
 			},
 			textSize() {
 				switch(this.size) {
-					case 'xs': return 10 + 1; break;
+					case 'xs': return 11 + 1; break;
 					case 'sm': return 14 + 1; break;
-					case 'md': return 19 + 1; break;
-					case 'lg': return 24 + 1; break;
-					case 'xl': return 30 + 1; break;
+					case 'md': return 17 + 1; break;
+					case 'lg': return 20 + 1; break;
+					case 'xl': return 23 + 1; break;
 					default: return this.size; break;
 				}
 			},

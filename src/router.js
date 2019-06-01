@@ -6,6 +6,10 @@ import SectionList from './screen/chapters/SectionList.vue';
 
 import C1S1Content from './screen/chapters/chapter-1/section-1/Content.vue';
 
+import C2S1Content from './screen/chapters/chapter-2/section-1/Content.vue';
+
+import C3S1Content from './screen/chapters/chapter-3/section-1/Content.vue';
+
 const AppNavigation = StackNavigator(
 	{
 		Title,
@@ -13,6 +17,10 @@ const AppNavigation = StackNavigator(
 		SectionList,
 
 		C1S1Content,
+
+		C2S1Content,
+
+		C3S1Content,
 	},
 	{
 		initialRouteName: 'Title',
