@@ -5,39 +5,40 @@
 			<cus-title>Hukum Isti'adzah</cus-title>
 
 			<cus-parg>
-				What follows within the Fundamentals section of this documentation is a tour of the most important aspects of React Navigation. It should be enough for you know how to build your typical small mobile application, and give you the background that you need to dive deeper into the more advanced parts of React Navigation.
+				Sed a vestibulum diam. Nulla nibh felis, eleifend vitae lectus et, lacinia finibus lectus. Aliquam ac mauris a nulla aliquam sollicitudin vel et mi. Maecenas sodales mattis gravida. Nam interdum, massa non convallis sodales, leo ex pretium mi, quis tempor libero lorem id lorem. Praesent dui neque, maximus id erat ut, accumsan hendrerit elit. Ut sollicitudin quam ante, aliquet pulvinar dolor pharetra at.
 			</cus-parg>
+			<cus-arab audio="sound3">بسم الله الرحمن الرحيم</cus-arab>
 
-			<cus-list collapse prefix="1" title="How to build your typical small mobile application">
-				<cus-parg>What follows within the Fundamentals section of this documentation is a tour of the most important aspects of React Navigation.
+			<cus-list collapse prefix="1" title="Maecenas sodales mattis gravida.">
+				<cus-parg>accumsan hendrerit elit. Ut sollicitudin quam ante, aliquet pulvinar dolor pharetra at.
 				</cus-parg>
 
 				<cus-list prefix="a">
-					<cus-parg>What follows within the Fundamentals section of this documentation is a tour of the most important aspects of React Navigation.
+					<cus-parg>massa non convallis sodales, leo ex pretium mi, quis tempor libero lorem id lorem.
 					</cus-parg>
 					<cus-arab audio="sound1">بسم الله الرحمن الرحيم</cus-arab>
 					<cus-arab audio="sound2">بسم الله الرحمن الرحيم</cus-arab>
 				</cus-list>
 				<cus-list prefix="b">
-					<cus-parg>What follows within the Fundamentals section of this documentation is a tour of the most important aspects of React Navigation.
+					<cus-parg>Nulla nibh felis, eleifend vitae lectus et.
 					</cus-parg>
 				</cus-list>
 			</cus-list>
 
 			<cus-list collapse prefix="2" title="Fundamentals section of this documentation is a tour">
-				<cus-parg>What follows within the Fundamentals section of this documentation is a tour of the most important aspects of React Navigation.
+				<cus-parg>Aliquam ac mauris a nulla aliquam sollicitudin vel et mi.
 				</cus-parg>
 
 				<cus-list prefix="a">
-					<cus-parg>What follows within the Fundamentals section of this documentation is a tour of the most important aspects of React Navigation.
+					<cus-parg>eleifend vitae lectus et, lacinia finibus lectus. Aliquam ac mauris a nulla aliquam sollicitudin vel et mi. Maecenas.
 					</cus-parg>
 				</cus-list>
 				<cus-list prefix="b">
-					<cus-parg>What follows within the Fundamentals section of this documentation is a tour of the most important aspects of React Navigation.
+					<cus-parg>eleifend vitae lectus et, lacinia finibus lectus. Aliquam ac mauris a nulla aliquam sollicitudin vel et mi Maecenas.
 					</cus-parg>
 				</cus-list>
 			</cus-list>
-			
+			<nav-tool :navigation="navigation" next="C3S2Content"></nav-tool>
 		</nb-content>
 		<audio-tool></audio-tool>
 	</nb-container>
@@ -49,11 +50,12 @@
 	import CusParg from '../../../../item/CusParg';
 	import CusList from '../../../../item/CusList';
 	import CusArab from '../../../../item/CusArab';
+	import NavTool from '../../../../item/NavTool';
 	import AudioTool from '../../../../item/AudioTool';
 
 	export default {
 		components: {
-			Header, CusTitle, CusParg, CusList, CusArab, AudioTool
+			Header, CusTitle, CusParg, CusList, CusArab, AudioTool, NavTool
 		},
 		props: { navigation: Object }
 	}

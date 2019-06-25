@@ -18,7 +18,7 @@
 				weight="semi-bold"
 			>{{ title }}
 			</cus-text>
-			<cus-text v-if="!active" :style="{ marginBottom: 10 }" color="dark" size="xs" weight="light">klik untuk selanjutnya >></cus-text>
+			<cus-text v-if="!active" :style="{ marginBottom: 10 }" color="dark" size="xs" weight="light">klik untuk selanjutnya <nb-icon type="FontAwesome" name="angle-double-right" class="icon"/></cus-text>
 		</touchable-opacity>
 
 		<cus-text v-if="!collapse"
@@ -78,5 +78,9 @@
 	.title {
 		margin-bottom: -10;
 		line-height: 23;
+	}
+	.icon {
+		color: #777;
+		font-size: 11;
 	}
 </style>

@@ -76,15 +76,22 @@
 	- cus-text -/
 	- cus-title -/
 	- cus-list -/
-		- collapsible
+		- collapsible -/
 	- cus-parg -/
-	- cus-arab
-	- cus-audio
+	- cus-arab -/
+	- cus-audio -/
 	- cus-image
+	- navigator -
 
 - exclusive component
-	- word-example ch5
-	- ayat-example ch5
+	- word-example ch5 -/
+	- ayat-example ch5 -/
 	- alif-lam-example ch5
 	- ro-laws-example ch5
 	- huruf list table ch4
+
+- screens
+	- chapters
+	- setting
+	- about
+	- report

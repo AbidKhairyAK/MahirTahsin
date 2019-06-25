@@ -1,7 +1,7 @@
 <template>
 	<nb-container class="container">
 		<bg></bg>
-		<header title="Daftar Tab" :navigation="navigation"></header>
+		<header title="Daftar Bab" :navigation="navigation"></header>
 		<nb-content padder>
 			<flat-list
 				:data="data.titles"
@@ -30,7 +30,7 @@
 		},
 		data: () => ({
 			data: data,
-		})
+		}),
 	}
 </script>
 

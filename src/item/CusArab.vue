@@ -18,10 +18,10 @@
 				return 'KFGQPCUthmanicScriptHAFS';
 			},
 			audioStatus() {
-				return this.$store.state.audio_status;
+				return this.$store.state.audio.audio_status;
 			},
 			audioName() {
-				return this.$store.state.audio_name;
+				return this.$store.state.audio.audio_name;
 			},
 			textColor() {
 				if (this.audioName == this.audio) {
@@ -56,7 +56,9 @@
 		},
 		methods: {
 			setAudio() {
-				this.$store.dispatch('setAudio', this.audio);
+				if (this.audio) {
+					this.$store.dispatch('audio/setAudio', this.audio);
+				}
 			}
 		},
 	}

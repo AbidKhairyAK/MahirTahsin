@@ -13,7 +13,7 @@
 
 	export default {
 		components: { CusText },
-		props: ['id','title', 'navigation',],
+		props: ['id','title', 'navigation'],
 		methods: {
 			navigate() {
 				this.navigation.navigate('SectionList', {

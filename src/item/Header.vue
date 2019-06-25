@@ -24,7 +24,7 @@
 		props: ['title', 'navigation'],
 		methods: {
 			goBack() {
-				this.$store.dispatch('closeAudio');
+				this.$store.dispatch('audio/closeAudio');
 				this.navigation.goBack();
 			}
 		}

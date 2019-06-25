@@ -26,18 +26,18 @@
 	export default {
 		computed: {
 			audioStatus() {
-				return this.$store.state.audio_status;
+				return this.$store.state.audio.audio_status;
 			}
 		},
 		methods: {
 			playAudio() {
-				this.$store.dispatch('playAudio');
+				this.$store.dispatch('audio/playAudio');
 			},
 			stopAudio() {
-				this.$store.dispatch('stopAudio');
+				this.$store.dispatch('audio/stopAudio');
 			},
 			closeAudio() {
-				this.$store.dispatch('closeAudio');
+				this.$store.dispatch('audio/closeAudio');
 			},
 		}
 	}

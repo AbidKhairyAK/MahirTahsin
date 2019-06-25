@@ -33,7 +33,7 @@
 			chapter() {
 				const { params } = this.navigation.state;
 				return params ? params : {};
-			}
+			},
 		}
 	}
 </script>

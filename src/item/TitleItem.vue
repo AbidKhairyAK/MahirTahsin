@@ -17,6 +17,10 @@
 		props: ['title', 'icon', 'navigation', 'nav'],
 		methods: {
 			navigate() {
+				if (this.nav !== "ChapterList") {
+					alert('masih dalam tahap pengembangan..');
+					return;
+				}
 				this.navigation.navigate(this.nav);
 			}
 		}
